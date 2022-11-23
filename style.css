@@ -1,0 +1,206 @@
+nav {
+    margin: auto;
+    position: relative;
+    width: 590px  ;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 100px;
+  }
+  a:nth-child(2) {
+    width: 110px;
+  }
+  a:nth-child(3) {
+    width: 100px;
+  }
+  a:nth-child(4) {
+    width: 160px;
+  }
+  a:nth-child(5) {
+    width: 120px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100ffpx;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+  }
+  
+  
+  p {
+      color: black;
+      font-family:  'Courier New', Courier, monospace;
+      font-size: 16px;
+  }
+  
+  span {
+      color: #2BD6B4;
+  }
+  
+  
+  
+  
+  Resources
+.left{
+    display:inline;
+}
+
+.container{
+    font-family:'Courier New', Courier, monospace;
+    font-size:x-large;
+    justify-content: center;
+    margin-top: 200px;
+    text-align:center;
+
+}
+.child{
+    font-size:large;
+}
+.frame {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 15px 10px;
+    border-radius:50%;
+  }
+@property --gap{
+    syntax: '<length>';
+    inherits: true;
+    initial-value: 0;
+  }
+  @property --angle{
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+  }
+  img {
+    --border: 15px;
+    --gap: 12px;
+    --color: #FA6900;
+    
+    width: 200px;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+    padding: calc(var(--border) + var(--gap));
+    
+    --angle: 90deg;
+    background:
+      radial-gradient(farthest-side,var(--color) 97%,#0000 101%) 85.35% 85.35%,
+      conic-gradient(from calc(180deg - var(--angle)/2),#0000 var(--angle),var(--color) 0),
+      radial-gradient(farthest-side,var(--color) 97%,#0000 101%) 14.65% 85.35%;
+    background-size: var(--border) var(--border),auto;
+    background-repeat: no-repeat;
+    
+    -webkit-mask:
+      radial-gradient(farthest-side, 
+       #000  calc(99%  - calc(var(--border) + var(--gap))),
+       #0000 calc(100% - calc(var(--border) + var(--gap))) 
+             calc(99%  - var(--border)), 
+       #000  calc(100% - var(--border)));
+            mask:
+      radial-gradient(farthest-side, 
+       #000  calc(99%  - calc(var(--border) + var(--gap))),
+       #0000 calc(100% - calc(var(--border) + var(--gap))) 
+             calc(99%  - var(--border)), 
+       #000  calc(100% - var(--border)));
+    transition: --angle .4s,--gap .4s;
+  }
+  img:hover {
+    --angle: 0deg;
+    --gap: 5px;
+  }
+  
+  .profilepic {
+    align-content: center;
+  }
+  .ppcontainer {
+    align-content: auto;
+    margin:auto;
+    width:60%;
+    
+  }
+.aboutdiv
+{
+  width:700px;
+  height: auto;
+  margin-left:360px;
+  
+  margin-top:-100px;
+  border-color: #0B486B;
+  border-top-style: solid;
+  border-width: 10px;
+}
+b{
+  color:#e67e22;
+}
+ul{
+  font-family:  'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+.footerdiv{
+  align-content: auto;
+  margin:auto;
+  width:10%;
+  display:inline;
+  margin-top: 20%;
+}
+.footerul{
+  display:inline-block;
+  display:inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footerlist{
+  display: inline-block;
+}
+a.footer{
+  font-size: 30px; color: #BD1550;
+}
